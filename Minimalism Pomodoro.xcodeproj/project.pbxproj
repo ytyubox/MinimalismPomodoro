@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA8E46F72221519D00CD3F2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E46F62221519D00CD3F2F /* AppDelegate.swift */; };
+		AA8E46F92221519D00CD3F2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E46F82221519D00CD3F2F /* ViewController.swift */; };
+		AA8E46FC2221519D00CD3F2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8E46FA2221519D00CD3F2F /* Main.storyboard */; };
+		AA8E46FE222151A100CD3F2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA8E46FD222151A100CD3F2F /* Assets.xcassets */; };
+		AA8E4701222151A100CD3F2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8E46FF222151A100CD3F2F /* LaunchScreen.storyboard */; };
+		AA8E470C222151A100CD3F2F /* Minimalism_PomodoroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E470B222151A100CD3F2F /* Minimalism_PomodoroTests.swift */; };
+		AA8E4717222151A100CD3F2F /* Minimalism_PomodoroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E4716222151A100CD3F2F /* Minimalism_PomodoroUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA8E4708222151A100CD3F2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA8E46EB2221519D00CD3F2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA8E46F22221519D00CD3F2F;
+			remoteInfo = "Minimalism Pomodoro";
+		};
+		AA8E4713222151A100CD3F2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA8E46EB2221519D00CD3F2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA8E46F22221519D00CD3F2F;
+			remoteInfo = "Minimalism Pomodoro";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA8E46F32221519D00CD3F2F /* Minimalism Pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Minimalism Pomodoro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA8E46F62221519D00CD3F2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA8E46F82221519D00CD3F2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA8E46FB2221519D00CD3F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA8E46FD222151A100CD3F2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA8E4700222151A100CD3F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA8E4702222151A100CD3F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA8E4707222151A100CD3F2F /* Minimalism PomodoroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Minimalism PomodoroTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA8E470B222151A100CD3F2F /* Minimalism_PomodoroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minimalism_PomodoroTests.swift; sourceTree = "<group>"; };
+		AA8E470D222151A100CD3F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA8E4712222151A100CD3F2F /* Minimalism PomodoroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Minimalism PomodoroUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA8E4716222151A100CD3F2F /* Minimalism_PomodoroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minimalism_PomodoroUITests.swift; sourceTree = "<group>"; };
+		AA8E4718222151A100CD3F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA8E46F02221519D00CD3F2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA8E4704222151A100CD3F2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA8E470F222151A100CD3F2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA8E46EA2221519D00CD3F2F = {
+			isa = PBXGroup;
+			children = (
+				AA8E46F52221519D00CD3F2F /* Minimalism Pomodoro */,
+				AA8E470A222151A100CD3F2F /* Minimalism PomodoroTests */,
+				AA8E4715222151A100CD3F2F /* Minimalism PomodoroUITests */,
+				AA8E46F42221519D00CD3F2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA8E46F42221519D00CD3F2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA8E46F32221519D00CD3F2F /* Minimalism Pomodoro.app */,
+				AA8E4707222151A100CD3F2F /* Minimalism PomodoroTests.xctest */,
+				AA8E4712222151A100CD3F2F /* Minimalism PomodoroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA8E46F52221519D00CD3F2F /* Minimalism Pomodoro */ = {
+			isa = PBXGroup;
+			children = (
+				AA8E46F62221519D00CD3F2F /* AppDelegate.swift */,
+				AA8E46F82221519D00CD3F2F /* ViewController.swift */,
+				AA8E46FA2221519D00CD3F2F /* Main.storyboard */,
+				AA8E46FD222151A100CD3F2F /* Assets.xcassets */,
+				AA8E46FF222151A100CD3F2F /* LaunchScreen.storyboard */,
+				AA8E4702222151A100CD3F2F /* Info.plist */,
+			);
+			path = "Minimalism Pomodoro";
+			sourceTree = "<group>";
+		};
+		AA8E470A222151A100CD3F2F /* Minimalism PomodoroTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA8E470B222151A100CD3F2F /* Minimalism_PomodoroTests.swift */,
+				AA8E470D222151A100CD3F2F /* Info.plist */,
+			);
+			path = "Minimalism PomodoroTests";
+			sourceTree = "<group>";
+		};
+		AA8E4715222151A100CD3F2F /* Minimalism PomodoroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA8E4716222151A100CD3F2F /* Minimalism_PomodoroUITests.swift */,
+				AA8E4718222151A100CD3F2F /* Info.plist */,
+			);
+			path = "Minimalism PomodoroUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA8E46F22221519D00CD3F2F /* Minimalism Pomodoro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA8E471B222151A100CD3F2F /* Build configuration list for PBXNativeTarget "Minimalism Pomodoro" */;
+			buildPhases = (
+				AA8E46EF2221519D00CD3F2F /* Sources */,
+				AA8E46F02221519D00CD3F2F /* Frameworks */,
+				AA8E46F12221519D00CD3F2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Minimalism Pomodoro";
+			productName = "Minimalism Pomodoro";
+			productReference = AA8E46F32221519D00CD3F2F /* Minimalism Pomodoro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA8E4706222151A100CD3F2F /* Minimalism PomodoroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA8E471E222151A100CD3F2F /* Build configuration list for PBXNativeTarget "Minimalism PomodoroTests" */;
+			buildPhases = (
+				AA8E4703222151A100CD3F2F /* Sources */,
+				AA8E4704222151A100CD3F2F /* Frameworks */,
+				AA8E4705222151A100CD3F2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA8E4709222151A100CD3F2F /* PBXTargetDependency */,
+			);
+			name = "Minimalism PomodoroTests";
+			productName = "Minimalism PomodoroTests";
+			productReference = AA8E4707222151A100CD3F2F /* Minimalism PomodoroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA8E4711222151A100CD3F2F /* Minimalism PomodoroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA8E4721222151A100CD3F2F /* Build configuration list for PBXNativeTarget "Minimalism PomodoroUITests" */;
+			buildPhases = (
+				AA8E470E222151A100CD3F2F /* Sources */,
+				AA8E470F222151A100CD3F2F /* Frameworks */,
+				AA8E4710222151A100CD3F2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA8E4714222151A100CD3F2F /* PBXTargetDependency */,
+			);
+			name = "Minimalism PomodoroUITests";
+			productName = "Minimalism PomodoroUITests";
+			productReference = AA8E4712222151A100CD3F2F /* Minimalism PomodoroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA8E46EB2221519D00CD3F2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "游宗諭";
+				TargetAttributes = {
+					AA8E46F22221519D00CD3F2F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					AA8E4706222151A100CD3F2F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = AA8E46F22221519D00CD3F2F;
+					};
+					AA8E4711222151A100CD3F2F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = AA8E46F22221519D00CD3F2F;
+					};
+				};
+			};
+			buildConfigurationList = AA8E46EE2221519D00CD3F2F /* Build configuration list for PBXProject "Minimalism Pomodoro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA8E46EA2221519D00CD3F2F;
+			productRefGroup = AA8E46F42221519D00CD3F2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA8E46F22221519D00CD3F2F /* Minimalism Pomodoro */,
+				AA8E4706222151A100CD3F2F /* Minimalism PomodoroTests */,
+				AA8E4711222151A100CD3F2F /* Minimalism PomodoroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA8E46F12221519D00CD3F2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8E4701222151A100CD3F2F /* LaunchScreen.storyboard in Resources */,
+				AA8E46FE222151A100CD3F2F /* Assets.xcassets in Resources */,
+				AA8E46FC2221519D00CD3F2F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA8E4705222151A100CD3F2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA8E4710222151A100CD3F2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA8E46EF2221519D00CD3F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8E46F92221519D00CD3F2F /* ViewController.swift in Sources */,
+				AA8E46F72221519D00CD3F2F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA8E4703222151A100CD3F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8E470C222151A100CD3F2F /* Minimalism_PomodoroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA8E470E222151A100CD3F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8E4717222151A100CD3F2F /* Minimalism_PomodoroUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA8E4709222151A100CD3F2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA8E46F22221519D00CD3F2F /* Minimalism Pomodoro */;
+			targetProxy = AA8E4708222151A100CD3F2F /* PBXContainerItemProxy */;
+		};
+		AA8E4714222151A100CD3F2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA8E46F22221519D00CD3F2F /* Minimalism Pomodoro */;
+			targetProxy = AA8E4713222151A100CD3F2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA8E46FA2221519D00CD3F2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA8E46FB2221519D00CD3F2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA8E46FF222151A100CD3F2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA8E4700222151A100CD3F2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA8E4719222151A100CD3F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA8E471A222151A100CD3F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA8E471C222151A100CD3F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3AMPL46LPV;
+				INFOPLIST_FILE = "Minimalism Pomodoro/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TsungYu.Minimalism-Pomodoro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA8E471D222151A100CD3F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3AMPL46LPV;
+				INFOPLIST_FILE = "Minimalism Pomodoro/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TsungYu.Minimalism-Pomodoro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA8E471F222151A100CD3F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3AMPL46LPV;
+				INFOPLIST_FILE = "Minimalism PomodoroTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TsungYu.Minimalism-PomodoroTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Minimalism Pomodoro.app/Minimalism Pomodoro";
+			};
+			name = Debug;
+		};
+		AA8E4720222151A100CD3F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3AMPL46LPV;
+				INFOPLIST_FILE = "Minimalism PomodoroTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TsungYu.Minimalism-PomodoroTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Minimalism Pomodoro.app/Minimalism Pomodoro";
+			};
+			name = Release;
+		};
+		AA8E4722222151A100CD3F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3AMPL46LPV;
+				INFOPLIST_FILE = "Minimalism PomodoroUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TsungYu.Minimalism-PomodoroUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Minimalism Pomodoro";
+			};
+			name = Debug;
+		};
+		AA8E4723222151A100CD3F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3AMPL46LPV;
+				INFOPLIST_FILE = "Minimalism PomodoroUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TsungYu.Minimalism-PomodoroUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Minimalism Pomodoro";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA8E46EE2221519D00CD3F2F /* Build configuration list for PBXProject "Minimalism Pomodoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA8E4719222151A100CD3F2F /* Debug */,
+				AA8E471A222151A100CD3F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA8E471B222151A100CD3F2F /* Build configuration list for PBXNativeTarget "Minimalism Pomodoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA8E471C222151A100CD3F2F /* Debug */,
+				AA8E471D222151A100CD3F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA8E471E222151A100CD3F2F /* Build configuration list for PBXNativeTarget "Minimalism PomodoroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA8E471F222151A100CD3F2F /* Debug */,
+				AA8E4720222151A100CD3F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA8E4721222151A100CD3F2F /* Build configuration list for PBXNativeTarget "Minimalism PomodoroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA8E4722222151A100CD3F2F /* Debug */,
+				AA8E4723222151A100CD3F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA8E46EB2221519D00CD3F2F /* Project object */;
+}
