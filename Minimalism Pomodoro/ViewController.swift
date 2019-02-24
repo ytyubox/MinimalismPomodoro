@@ -52,14 +52,18 @@ extension ViewController{
     guard let command = command else {return}
     switch command {
     case .start:
-
+      print("start")
       break
     case .reset:
+      print("reset")
       break
     case .setting:
+      UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
       break
     }
   }
+
+  
 
 }
 

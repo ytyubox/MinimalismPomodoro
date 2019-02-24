@@ -11,15 +11,10 @@ import UIKit
 class MainView: UIView {
   var selectedtime = (w:15,r:0) {didSet{
     timeLabel.text = String(format: "%02d:%02d", selectedtime.w,selectedtime.r)
+      commandButtons[0].isEnabled = !(selectedtime.w == 0 && selectedtime.r == 0)
     }}
 
-  let picker:TimePickerView = {
-    let picker = TimePickerView()
-    picker.showsSelectionIndicator = true
-   
-    return picker
-  }()
-
+  let picker = TimePickerView()
 
   let timeLabel:UILabel = {
     let label = UILabel()
@@ -29,12 +24,21 @@ class MainView: UIView {
 
     return label
   }()
-  let commandButton:[UIButton] = (0...1).map{
+  let commandButtons:[UIButton] = (0...1).map{
       let button = UIButton(type: UIButton.ButtonType.custom)
       button.tag = $0
-    button.addTarget(button, action: #selector(command), for: .touchUpInside)
+    button.setTitle(Theme.commandName[$0], for: .normal)
+    button.addTarget(self, action: #selector(command), for: .touchUpInside)
       return button
     }
+  let settingButton:UIButton = {
+    let button = UIButton(type: UIButton.ButtonType.custom)
+    button.setTitle(Theme.commandName[2], for: UIControl.State.normal)
+    button.addTarget(self, action: #selector(command), for: .touchUpInside)
+    return button
+  }()
+
+  //MARK: -
 
   private func setDelegate() {
     picker.dataSource = picker
@@ -45,6 +49,11 @@ class MainView: UIView {
     timeLabel.textColor = Theme.foregroundColor
     picker.backgroundColor = Theme.backgroundColor
     backgroundColor = Theme.backgroundColor
+    [0,1].forEach{
+      commandButtons[$0].setTitleColor(Theme.foregroundColor, for: .normal)
+      commandButtons[$0].backgroundColor = Theme.mediumColor
+    }
+    commandButtons[1].isEnabled = false
   }
 
   func setup() {
@@ -64,6 +73,7 @@ class MainView: UIView {
                          y: screenFrame.height / 2,
                          width: screenFrame.width  + widthOffset,
                          height: screenFrame.height / 3)
+
   }
    let screenFrame = UIScreen.main.bounds
 
@@ -75,13 +85,23 @@ class MainView: UIView {
                          height: screenFrame.height / 4)
   }
 
+  fileprivate func setupButtons() {
+    settingButton.frame = .init(x: 0, y: 0, width: 50, height: 50)
+    settingButton.layer.cornerRadius = 50 / 2
+
+    commandButtons[0].frame = .init(x: 0 , y: screenFrame.height / 6 * 5, width: screenFrame.width / 2, height: screenFrame.height / 6)
+    commandButtons[1].frame = .init(x: screenFrame.width / 2, y: screenFrame.height / 6 * 5, width: screenFrame.width / 2, height: screenFrame.height / 6)
+
+  }
+
   private func setupView(){
 
 
-    addSubviews(picker,timeLabel)
+    addSubviews(picker,timeLabel,settingButton,commandButtons[0],commandButtons[1])
     setupPicker()
     setupLabel()
     setupTheme()
+    setupButtons()
 
   }
 
@@ -89,10 +109,20 @@ class MainView: UIView {
 
 }
 
+//MARK: -
+
 extension MainView {
   @objc func command(_ sender:UIButton){
     guard let title = sender.currentTitle else {return}
     delegate?.handler(for: Command.init(for: title))
+    switch title {
+    case Theme.commandName[0] :
+      sender.setTitle(Theme.commandName[3], for: .normal)
+    case Theme.commandName[3]:
+      sender.setTitle(Theme.commandName[0], for: .normal)
+    default:
+      break
+    }
   }
 }
 

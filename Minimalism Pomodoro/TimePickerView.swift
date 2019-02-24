@@ -28,12 +28,12 @@ extension TimePickerView:UIPickerViewDataSource{
     return title_Picker[component].count
   }
 }
+let width = 20
 
 extension TimePickerView:UIPickerViewDelegate{
   func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
-    let width = 30
     let view = UIView(frame: .init(x: 0, y: 0, width: width, height: 50))
-    let numberlabel = UILabel(frame: .init(x: 0, y: 0, width: width, height: 20))
+    let numberlabel = UILabel(frame: .init(x: -width / 2, y: 0, width: width * 2, height: 20))
     numberlabel.font = UIFont.boldSystemFont(ofSize: 20)
     numberlabel.text = row % 5 == 0 ? String(title_Picker[component][row]) : ""
 
@@ -54,6 +54,9 @@ extension TimePickerView:UIPickerViewDelegate{
     transform = transform.scaledBy(x: 1, y: -1)
     view.transform = transform
     return view
+  }
+  func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+    return CGFloat(width)
   }
 
   func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {

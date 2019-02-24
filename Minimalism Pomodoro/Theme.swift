@@ -19,8 +19,11 @@ struct Theme {
   static var foregroundColor:UIColor{
     return isNightMode ? .white : .black
   }
+  static var mediumColor:UIColor {
+    return isNightMode ? .darkGray : .lightGray
+  }
 
-  static let commandName = ["start","reset","setting"]
+  static let commandName = ["start","reset","⚙️","pause"]
 
   private init(){
   }
