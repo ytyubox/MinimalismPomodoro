@@ -10,12 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
-    view.backgroundColor = .red
+  let mainView = MainView()
+
+  override func loadView() {
+
+    view = mainView
+    mainView.delegate = self
   }
 
-
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    mainView.setup()
+  }
 }
+
+
+
+
 

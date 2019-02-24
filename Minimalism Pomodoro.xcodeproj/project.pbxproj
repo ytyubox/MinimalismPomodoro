@@ -14,6 +14,10 @@
 		AA8E4701222151A100CD3F2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8E46FF222151A100CD3F2F /* LaunchScreen.storyboard */; };
 		AA8E470C222151A100CD3F2F /* Minimalism_PomodoroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E470B222151A100CD3F2F /* Minimalism_PomodoroTests.swift */; };
 		AA8E4717222151A100CD3F2F /* Minimalism_PomodoroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E4716222151A100CD3F2F /* Minimalism_PomodoroUITests.swift */; };
+		AA8E473E22215EB300CD3F2F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA8E473D22215EB300CD3F2F /* Default-568h@2x.png */; };
+		AA8E47402221630600CD3F2F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E473F2221630600CD3F2F /* Extensions.swift */; };
+		AA8E474222226C2900CD3F2F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E474122226C2900CD3F2F /* MainView.swift */; };
+		AA8E474422226DE300CD3F2F /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E474322226DE300CD3F2F /* TimePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		AA8E4712222151A100CD3F2F /* Minimalism PomodoroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Minimalism PomodoroUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA8E4716222151A100CD3F2F /* Minimalism_PomodoroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minimalism_PomodoroUITests.swift; sourceTree = "<group>"; };
 		AA8E4718222151A100CD3F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA8E473D22215EB300CD3F2F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AA8E473F2221630600CD3F2F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AA8E474122226C2900CD3F2F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AA8E474322226DE300CD3F2F /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		AA8E46EA2221519D00CD3F2F = {
 			isa = PBXGroup;
 			children = (
+				AA8E473D22215EB300CD3F2F /* Default-568h@2x.png */,
 				AA8E46F52221519D00CD3F2F /* Minimalism Pomodoro */,
 				AA8E470A222151A100CD3F2F /* Minimalism PomodoroTests */,
 				AA8E4715222151A100CD3F2F /* Minimalism PomodoroUITests */,
@@ -99,9 +108,9 @@
 			children = (
 				AA8E46F62221519D00CD3F2F /* AppDelegate.swift */,
 				AA8E46F82221519D00CD3F2F /* ViewController.swift */,
-				AA8E46FA2221519D00CD3F2F /* Main.storyboard */,
-				AA8E46FD222151A100CD3F2F /* Assets.xcassets */,
-				AA8E46FF222151A100CD3F2F /* LaunchScreen.storyboard */,
+				AA8E474122226C2900CD3F2F /* MainView.swift */,
+				AA8E474322226DE300CD3F2F /* TimePickerView.swift */,
+				AA8E473C22215BFF00CD3F2F /* Support files */,
 				AA8E4702222151A100CD3F2F /* Info.plist */,
 			);
 			path = "Minimalism Pomodoro";
@@ -123,6 +132,17 @@
 				AA8E4718222151A100CD3F2F /* Info.plist */,
 			);
 			path = "Minimalism PomodoroUITests";
+			sourceTree = "<group>";
+		};
+		AA8E473C22215BFF00CD3F2F /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				AA8E473F2221630600CD3F2F /* Extensions.swift */,
+				AA8E46FA2221519D00CD3F2F /* Main.storyboard */,
+				AA8E46FD222151A100CD3F2F /* Assets.xcassets */,
+				AA8E46FF222151A100CD3F2F /* LaunchScreen.storyboard */,
+			);
+			path = "Support files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA8E4701222151A100CD3F2F /* LaunchScreen.storyboard in Resources */,
+				AA8E473E22215EB300CD3F2F /* Default-568h@2x.png in Resources */,
 				AA8E46FE222151A100CD3F2F /* Assets.xcassets in Resources */,
 				AA8E46FC2221519D00CD3F2F /* Main.storyboard in Resources */,
 			);
@@ -257,6 +278,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA8E46F92221519D00CD3F2F /* ViewController.swift in Sources */,
+				AA8E474222226C2900CD3F2F /* MainView.swift in Sources */,
+				AA8E47402221630600CD3F2F /* Extensions.swift in Sources */,
+				AA8E474422226DE300CD3F2F /* TimePickerView.swift in Sources */,
 				AA8E46F72221519D00CD3F2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
