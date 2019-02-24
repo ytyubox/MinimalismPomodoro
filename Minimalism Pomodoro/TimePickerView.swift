@@ -34,7 +34,7 @@ extension TimePickerView:UIPickerViewDelegate{
     let width = 30
     let view = UIView(frame: .init(x: 0, y: 0, width: width, height: 50))
     let numberlabel = UILabel(frame: .init(x: 0, y: 0, width: width, height: 20))
-
+    numberlabel.font = UIFont.boldSystemFont(ofSize: 20)
     numberlabel.text = row % 5 == 0 ? String(title_Picker[component][row]) : ""
 
 
@@ -48,7 +48,7 @@ extension TimePickerView:UIPickerViewDelegate{
         $0.textColor = Theme.foregroundColor
     }
     view.addSubviews(numberlabel,barLabel)
-    view.backgroundColor = Theme.backgroundColor
+//    view.backgroundColor = Theme.backgroundColor
     var transform = CGAffineTransform.identity
     transform = transform.rotated(by: .pi / 2)
     transform = transform.scaledBy(x: 1, y: -1)

@@ -15,7 +15,6 @@ class MainView: UIView {
 
   let picker:TimePickerView = {
     let picker = TimePickerView()
-    picker.backgroundColor = Theme.backgroundColor
     picker.showsSelectionIndicator = true
    
     return picker
@@ -27,7 +26,7 @@ class MainView: UIView {
     label.text = "15:00"
     label.textAlignment = .center
     label.font = UIFont.boldSystemFont(ofSize: 50)
-    label.textColor = Theme.foregroundColor
+
     return label
   }()
   let commandButton:[UIButton] = (0...1).map{
@@ -40,6 +39,12 @@ class MainView: UIView {
   private func setDelegate() {
     picker.dataSource = picker
     picker.delegate = picker
+  }
+
+  func setupTheme() {
+    timeLabel.textColor = Theme.foregroundColor
+    picker.backgroundColor = Theme.backgroundColor
+    backgroundColor = Theme.backgroundColor
   }
 
   func setup() {
@@ -71,11 +76,12 @@ class MainView: UIView {
   }
 
   private func setupView(){
-    backgroundColor = Theme.backgroundColor
+
 
     addSubviews(picker,timeLabel)
     setupPicker()
     setupLabel()
+    setupTheme()
 
   }
 

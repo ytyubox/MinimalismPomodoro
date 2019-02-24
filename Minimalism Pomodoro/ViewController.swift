@@ -30,7 +30,21 @@ class ViewController: UIViewController {
     mainView.picker.subviews[$0].isHidden = true
     }
   }
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
 
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(appWillEnterForeground),
+                                           name: UIApplication.willEnterForegroundNotification,
+                                           object: nil)
+
+
+
+
+  }
+  @objc func appWillEnterForeground() {
+ mainView.setup()
+  }
 }
 
 extension ViewController{
@@ -46,7 +60,7 @@ extension ViewController{
       break
     }
   }
-  
+
 }
 
 
