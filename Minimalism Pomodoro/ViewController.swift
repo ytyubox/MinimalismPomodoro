@@ -21,10 +21,30 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     mainView.setup()
+    mainView.picker.selectRow(15, inComponent: 0, animated: true)
   }
+
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    mainView.picker.subviews[1...2].indices.forEach{
+    mainView.picker.subviews[$0].isHidden = true
+    }
+  }
+
+}
+
+extension ViewController{
+  func handler(for :Command){
+
+  }
+
 }
 
 
-
+enum Command{
+  case start
+  case reset
+  case setting
+}
 
 

@@ -9,18 +9,17 @@
 import UIKit.UIPickerView
 
 
-class HoriPicker:UIPickerView{
+class TimePickerView:UIPickerView{
 
-  var title_Picker:[[String]] = [
-    Array((0...60)).map{"\($0)"},
-    ["3","4","5"]
+  var title_Picker:[[Int]] = [
+    Array((0...60)),
+    Array((0...59))
   ]
-  var didSelectedRowForComponent = [Int:String]()
 }
 
 
 
-extension HoriPicker:UIPickerViewDataSource{
+extension TimePickerView:UIPickerViewDataSource{
   func numberOfComponents(in pickerView: UIPickerView) -> Int {
     return title_Picker.count
   }
@@ -30,7 +29,7 @@ extension HoriPicker:UIPickerViewDataSource{
   }
 }
 
-extension HoriPicker:UIPickerViewDelegate{
+extension TimePickerView:UIPickerViewDelegate{
   func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
     let width = 30
     let view = UIView(frame: .init(x: 0, y: 0, width: width, height: 50))
@@ -43,11 +42,13 @@ extension HoriPicker:UIPickerViewDelegate{
     barLabel.text = (row % 5 == 0) ? "|" : "ı"
 
 
-    [numberlabel,barLabel].forEach{
-      $0.textAlignment = .center
-      }
+    [numberlabel,barLabel]
+      .forEach{
+        $0.textAlignment = .center
+        $0.textColor = Theme.foregroundColor
+    }
     view.addSubviews(numberlabel,barLabel)
-    view.backgroundColor = .yellow
+    view.backgroundColor = Theme.backgroundColor
     var transform = CGAffineTransform.identity
     transform = transform.rotated(by: .pi / 2)
     transform = transform.scaledBy(x: 1, y: -1)
@@ -55,14 +56,21 @@ extension HoriPicker:UIPickerViewDelegate{
     return view
   }
 
-//  func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
-//    return 50
-//  }
-  func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-    didSelectedRowForComponent[component] = title_Picker[component][row]
+  func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
+    return 50
   }
 
-//  func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
-//    return 20
-//  }
+  func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+
+    guard let superview = superview as? MainView else {return}
+    switch component {
+    case 0:
+      superview.selectedtime.w = title_Picker[component][row]
+    case 1:
+      superview.selectedtime.r = title_Picker[component][row]
+    default:
+      break
+    }
+  }
+
 }
