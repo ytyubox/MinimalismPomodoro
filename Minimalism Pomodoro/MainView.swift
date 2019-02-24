@@ -85,8 +85,9 @@ class MainView: UIView {
 
 extension MainView {
   @objc func command(_ sender:UIButton){
-
-
-
+    guard let title = sender.currentTitle else {return}
+    delegate?.handler(for: Command.init(for: title))
   }
 }
+
+

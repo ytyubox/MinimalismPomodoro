@@ -34,10 +34,19 @@ class ViewController: UIViewController {
 }
 
 extension ViewController{
-  func handler(for :Command){
+  func handler(for command:Command?){
+    guard let command = command else {return}
+    switch command {
+    case .start:
 
+      break
+    case .reset:
+      break
+    case .setting:
+      break
+    }
   }
-
+  
 }
 
 
@@ -45,6 +54,20 @@ enum Command{
   case start
   case reset
   case setting
+
+  init?(for message:String){
+    switch  message {
+    case Theme.commandName[0]:
+      self = .start
+    case Theme.commandName[1]:
+      self = .reset
+    case Theme.commandName[2]:
+      self = .setting
+    default:
+      return nil
+    }
+
+  }
 }
 
 

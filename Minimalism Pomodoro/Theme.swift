@@ -20,6 +20,8 @@ struct Theme {
     return isNightMode ? .white : .black
   }
 
+  static let commandName = ["start","reset","setting"]
+
   private init(){
   }
 
