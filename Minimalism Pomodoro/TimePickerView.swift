@@ -18,7 +18,7 @@ class TimePickerView:UIPickerView{
 }
 
 
-
+//MARK:- 
 extension TimePickerView:UIPickerViewDataSource{
   func numberOfComponents(in pickerView: UIPickerView) -> Int {
     return title_Picker.count
@@ -30,6 +30,7 @@ extension TimePickerView:UIPickerViewDataSource{
 }
 let width = 20
 
+//MARK:-
 extension TimePickerView:UIPickerViewDelegate{
   func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
     let view = UIView(frame: .init(x: 0, y: 0, width: width, height: 50))
@@ -48,7 +49,6 @@ extension TimePickerView:UIPickerViewDelegate{
         $0.textColor = Theme.foregroundColor
     }
     view.addSubviews(numberlabel,barLabel)
-//    view.backgroundColor = Theme.backgroundColor
     var transform = CGAffineTransform.identity
     transform = transform.rotated(by: .pi / 2)
     transform = transform.scaledBy(x: 1, y: -1)

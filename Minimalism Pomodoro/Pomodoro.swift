@@ -14,11 +14,6 @@ struct Pomodoro {
   let time = [15,00]
 
   func start() {
-//    Timer.scheduledTimer(timeInterval: <#T##TimeInterval#>,
-//                         target: <#T##Any#>,
-//                         selector: <#T##Selector#>,
-//                         userInfo: <#T##Any?#>,
-//                         repeats: true)
   }
 
   static let shared = Pomodoro()

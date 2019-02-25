@@ -75,8 +75,6 @@ class MainView: UIView {
                          height: screenFrame.height / 3)
 
   }
-   let screenFrame = UIScreen.main.bounds
-
   private func setupLabel(){
 
     timeLabel.frame = .init(x: 0,
@@ -104,7 +102,7 @@ class MainView: UIView {
     setupButtons()
 
   }
-
+  lazy  var screenFrame = UIScreen.main.bounds
   weak var delegate:ViewController?
 
 }
