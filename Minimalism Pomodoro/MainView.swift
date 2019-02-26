@@ -112,6 +112,8 @@ class MainView: UIView {
 extension MainView {
   @objc func command(_ sender:UIButton){
     guard let title = sender.currentTitle else {return}
+    UNCenter.requestAuthorization()
+    UNCenter.sentUN(delay: 5, message: "press" + title)
     delegate?.handler(for: Command.init(for: title))
     switch title {
     case Theme.commandName[0] :

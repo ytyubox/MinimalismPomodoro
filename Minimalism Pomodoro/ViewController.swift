@@ -50,6 +50,7 @@ class ViewController: UIViewController {
 extension ViewController{
   func handler(for command:Command?){
     guard let command = command else {return}
+    
     switch command {
     case .start:
       print("start")
@@ -58,7 +59,9 @@ extension ViewController{
       print("reset")
       break
     case .setting:
-      UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+      UIApplication
+        .shared
+        .open(URL(string: UIApplication.openSettingsURLString)!)
       break
     }
   }

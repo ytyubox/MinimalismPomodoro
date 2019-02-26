@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window?.makeKeyAndVisible()
     window?.rootViewController = ViewController()
 
+//    UNCenter.requestAuthorization()
+
     return true
   }
 
