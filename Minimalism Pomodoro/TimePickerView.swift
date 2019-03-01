@@ -11,11 +11,34 @@ import UIKit.UIPickerView
 
 class TimePickerView:UIPickerView{
 
+
   var title_Picker:[[Int]] = [
-    Array((0...60)),
-    Array((0...59))
+    Array((0...30)),
+    Array((0...5)),
+    Array((0...5))
   ]
+  lazy var indicatorlabels:[UILabel] = (4...5).map {
+    let label = UILabel()
+    label.tag = $0
+    label.text = Theme.commandName[$0]
+    label.textAlignment = .center
+    label.font = UIFont.boldSystemFont(ofSize: 50)
+    addSubview(label)
+
+    return label
+  }
+  let width = 20
+
+  func setupTheme() {
+    backgroundColor = Theme.backgroundColor
+
+  }
+
+  func changeInteract() {
+    isUserInteractionEnabled.toggle()
+  }
 }
+
 
 
 //MARK:- 
@@ -27,20 +50,32 @@ extension TimePickerView:UIPickerViewDataSource{
   func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
     return title_Picker[component].count
   }
+
 }
-let width = 20
 
 //MARK:-
 extension TimePickerView:UIPickerViewDelegate{
   func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
     let view = UIView(frame: .init(x: 0, y: 0, width: width, height: 50))
-    let numberlabel = UILabel(frame: .init(x: -width / 2, y: 0, width: width * 2, height: 20))
-    numberlabel.font = UIFont.boldSystemFont(ofSize: 20)
-    numberlabel.text = row % 5 == 0 ? String(title_Picker[component][row]) : ""
+    let numberlabel = VerticalAlignedLabel(frame: .init(x: -width / 2, y: 0, width: width * 2, height: 20))
+    numberlabel.contentMode = .bottom
+//    numberlabel.font = UIFont.boldSystemFont(ofSize: 20)
+    let title =  String(title_Picker[component][row])
+    let text = (component == 0) ?
+      row % 5 == 0 ? title : "\(title.last!)" : title
+    let size:CGFloat = (component == 0) ?
+      row % 5 == 0 ? 20 : 15  : 18
+
+    numberlabel.attributedText = NSAttributedString(string: text, attributes: [
+      .font:UIFont.systemFont(ofSize: size)
+      ])
+
+//    if  {numberlabel.text = String(title_Picker[component][row])}
 
 
-    let barLabel = UILabel(frame: .init(x: 0, y: 20, width: width, height: 30))
+    let barLabel = VerticalAlignedLabel(frame: .init(x: 0, y: 20, width: width, height: 30))
     barLabel.text = (row % 5 == 0) ? "|" : "ı"
+
 
 
     [numberlabel,barLabel]
@@ -68,12 +103,37 @@ extension TimePickerView:UIPickerViewDelegate{
     guard let superview = superview as? MainView else {return}
     switch component {
     case 0:
+      var row = row
+      #if !DEBUG
+      if row < 5{
+        selectRow(5, inComponent: 0, animated: true)
+        row = 5
+      }
+      #endif
       superview.selectedtime.w = title_Picker[component][row]
+//      title_Picker[1] = (0...row).map{$0}
+
+
+      if selectedRow(inComponent: 1) > row{
+        selectRow(row, inComponent: 1, animated: true)
+        superview.selectedtime.r = title_Picker[1].last ?? 0
+      }
+      reloadComponent(1)
     case 1:
       superview.selectedtime.r = title_Picker[component][row]
+      if selectedRow(inComponent: 1) > selectedRow(inComponent: 0){
+        selectRow(selectedRow(inComponent: 0), inComponent: 1, animated: true)
+      }
+    case 2:
+      var row = row
+      if row  == 0{
+        selectRow(1, inComponent: 2, animated: true)
+        row = 1
+      }
     default:
       break
     }
+     superview.selectedtime = (selectedRow(inComponent: 0),selectedRow(inComponent: 1),selectedRow(inComponent: 2))
   }
 
 }

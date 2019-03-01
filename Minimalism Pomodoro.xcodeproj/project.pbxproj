@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA8C1D792226756900E44630 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8C1D782226756900E44630 /* NotificationCenter.framework */; };
+		AA8C1D7C2226756900E44630 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8C1D7B2226756900E44630 /* TodayViewController.swift */; };
+		AA8C1D7F2226756900E44630 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8C1D7D2226756900E44630 /* MainInterface.storyboard */; };
+		AA8C1D832226756900E44630 /* widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AA8C1D772226756900E44630 /* widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA8C1D8822267B1800E44630 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E473F2221630600CD3F2F /* Extensions.swift */; };
+		AA8C1D8922267B1900E44630 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E473F2221630600CD3F2F /* Extensions.swift */; };
+		AA8C1D8A22267B1900E44630 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E473F2221630600CD3F2F /* Extensions.swift */; };
+		AA8C1D8B22267B1A00E44630 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E473F2221630600CD3F2F /* Extensions.swift */; };
+		AA8C1D8C22267B4F00E44630 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E47472222988F00CD3F2F /* Theme.swift */; };
+		AA8C1D8F22267D6D00E44630 /* UNCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD519B2223EF0D00BA52AE /* UNCenter.swift */; };
+		AA8C1D922226B1D300E44630 /* VerticalAlignedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8C1D912226B1D300E44630 /* VerticalAlignedLabel.swift */; };
 		AA8E46F72221519D00CD3F2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E46F62221519D00CD3F2F /* AppDelegate.swift */; };
 		AA8E46F92221519D00CD3F2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E46F82221519D00CD3F2F /* ViewController.swift */; };
 		AA8E46FC2221519D00CD3F2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8E46FA2221519D00CD3F2F /* Main.storyboard */; };
@@ -30,6 +41,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AA8C1D812226756900E44630 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA8E46EB2221519D00CD3F2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA8C1D762226756900E44630;
+			remoteInfo = widget;
+		};
 		AA8E4708222151A100CD3F2F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AA8E46EB2221519D00CD3F2F /* Project object */;
@@ -60,6 +78,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				AA8C1D832226756900E44630 /* widget.appex in Embed App Extensions */,
 				AACD51B0222403AD00BA52AE /* UNContent.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -68,6 +87,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AA8C1D772226756900E44630 /* widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA8C1D782226756900E44630 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		AA8C1D7B2226756900E44630 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		AA8C1D7E2226756900E44630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		AA8C1D802226756900E44630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA8C1D9022267DD200E44630 /* widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = widget.entitlements; sourceTree = "<group>"; };
+		AA8C1D912226B1D300E44630 /* VerticalAlignedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalAlignedLabel.swift; sourceTree = "<group>"; };
 		AA8E46F32221519D00CD3F2F /* Minimalism Pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Minimalism Pomodoro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA8E46F62221519D00CD3F2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA8E46F82221519D00CD3F2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +125,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AA8C1D742226756900E44630 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8C1D792226756900E44630 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA8E46F02221519D00CD3F2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -132,6 +166,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA8C1D7A2226756900E44630 /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				AA8C1D9022267DD200E44630 /* widget.entitlements */,
+				AA8C1D7B2226756900E44630 /* TodayViewController.swift */,
+				AA8C1D7D2226756900E44630 /* MainInterface.storyboard */,
+				AA8C1D802226756900E44630 /* Info.plist */,
+			);
+			path = widget;
+			sourceTree = "<group>";
+		};
 		AA8E46EA2221519D00CD3F2F = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +185,7 @@
 				AA8E470A222151A100CD3F2F /* Minimalism PomodoroTests */,
 				AA8E4715222151A100CD3F2F /* Minimalism PomodoroUITests */,
 				AACD51A7222403AD00BA52AE /* UNContent */,
+				AA8C1D7A2226756900E44630 /* widget */,
 				AACD51A2222403AD00BA52AE /* Frameworks */,
 				AA8E46F42221519D00CD3F2F /* Products */,
 			);
@@ -152,6 +198,7 @@
 				AA8E4707222151A100CD3F2F /* Minimalism PomodoroTests.xctest */,
 				AA8E4712222151A100CD3F2F /* Minimalism PomodoroUITests.xctest */,
 				AACD51A1222403AC00BA52AE /* UNContent.appex */,
+				AA8C1D772226756900E44630 /* widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +214,7 @@
 				AA8E47472222988F00CD3F2F /* Theme.swift */,
 				AA8E474122226C2900CD3F2F /* MainView.swift */,
 				AA8E474322226DE300CD3F2F /* TimePickerView.swift */,
+				AA8C1D912226B1D300E44630 /* VerticalAlignedLabel.swift */,
 				AA8E474B2222C3B100CD3F2F /* Settings.bundle */,
 				AA8E473C22215BFF00CD3F2F /* Support files */,
 				AA8E4702222151A100CD3F2F /* Info.plist */,
@@ -208,6 +256,7 @@
 			children = (
 				AACD51A3222403AD00BA52AE /* UserNotifications.framework */,
 				AACD51A5222403AD00BA52AE /* UserNotificationsUI.framework */,
+				AA8C1D782226756900E44630 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -225,6 +274,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AA8C1D762226756900E44630 /* widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA8C1D862226756900E44630 /* Build configuration list for PBXNativeTarget "widget" */;
+			buildPhases = (
+				AA8C1D732226756900E44630 /* Sources */,
+				AA8C1D742226756900E44630 /* Frameworks */,
+				AA8C1D752226756900E44630 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = widget;
+			productName = widget;
+			productReference = AA8C1D772226756900E44630 /* widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		AA8E46F22221519D00CD3F2F /* Minimalism Pomodoro */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA8E471B222151A100CD3F2F /* Build configuration list for PBXNativeTarget "Minimalism Pomodoro" */;
@@ -238,6 +304,7 @@
 			);
 			dependencies = (
 				AACD51AF222403AD00BA52AE /* PBXTargetDependency */,
+				AA8C1D822226756900E44630 /* PBXTargetDependency */,
 			);
 			name = "Minimalism Pomodoro";
 			productName = "Minimalism Pomodoro";
@@ -307,6 +374,14 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "游宗諭";
 				TargetAttributes = {
+					AA8C1D762226756900E44630 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					AA8E46F22221519D00CD3F2F = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
@@ -348,11 +423,20 @@
 				AA8E4706222151A100CD3F2F /* Minimalism PomodoroTests */,
 				AA8E4711222151A100CD3F2F /* Minimalism PomodoroUITests */,
 				AACD51A0222403AC00BA52AE /* UNContent */,
+				AA8C1D762226756900E44630 /* widget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AA8C1D752226756900E44630 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8C1D7F2226756900E44630 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA8E46F12221519D00CD3F2F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,6 +474,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AA8C1D732226756900E44630 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8C1D7C2226756900E44630 /* TodayViewController.swift in Sources */,
+				AA8C1D8C22267B4F00E44630 /* Theme.swift in Sources */,
+				AA8C1D8822267B1800E44630 /* Extensions.swift in Sources */,
+				AA8C1D8F22267D6D00E44630 /* UNCenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA8E46EF2221519D00CD3F2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,6 +492,7 @@
 				AA8E46F92221519D00CD3F2F /* ViewController.swift in Sources */,
 				AA8E474222226C2900CD3F2F /* MainView.swift in Sources */,
 				AA8E47402221630600CD3F2F /* Extensions.swift in Sources */,
+				AA8C1D922226B1D300E44630 /* VerticalAlignedLabel.swift in Sources */,
 				AA8E474E2222D93A00CD3F2F /* Pomodoro.swift in Sources */,
 				AA8E47482222988F00CD3F2F /* Theme.swift in Sources */,
 				AACD519C2223EF0D00BA52AE /* UNCenter.swift in Sources */,
@@ -410,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA8E470C222151A100CD3F2F /* Minimalism_PomodoroTests.swift in Sources */,
+				AA8C1D8B22267B1A00E44630 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +515,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA8E4717222151A100CD3F2F /* Minimalism_PomodoroUITests.swift in Sources */,
+				AA8C1D8A22267B1900E44630 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,12 +524,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				AACD51A9222403AD00BA52AE /* NotificationViewController.swift in Sources */,
+				AA8C1D8922267B1900E44630 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AA8C1D822226756900E44630 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA8C1D762226756900E44630 /* widget */;
+			targetProxy = AA8C1D812226756900E44630 /* PBXContainerItemProxy */;
+		};
 		AA8E4709222151A100CD3F2F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AA8E46F22221519D00CD3F2F /* Minimalism Pomodoro */;
@@ -450,6 +554,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		AA8C1D7D2226756900E44630 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA8C1D7E2226756900E44630 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		AA8E46FA2221519D00CD3F2F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -477,6 +589,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AA8C1D842226756900E44630 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = widget/widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3AMPL46LPV;
+				INFOPLIST_FILE = widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TsungYu.Minimalism-Pomodoro.widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA8C1D852226756900E44630 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = widget/widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3AMPL46LPV;
+				INFOPLIST_FILE = widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TsungYu.Minimalism-Pomodoro.widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		AA8E4719222151A100CD3F2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -605,6 +757,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TsungYu.Minimalism-Pomodoro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -619,6 +772,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3AMPL46LPV;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = "Minimalism Pomodoro/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -754,6 +908,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AA8C1D862226756900E44630 /* Build configuration list for PBXNativeTarget "widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA8C1D842226756900E44630 /* Debug */,
+				AA8C1D852226756900E44630 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AA8E46EE2221519D00CD3F2F /* Build configuration list for PBXProject "Minimalism Pomodoro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

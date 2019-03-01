@@ -1,11 +1,3 @@
-//
-//  Theme.swift
-//  Minimalism Pomodoro
-//
-//  Created by 游宗諭 on 2019/2/24.
-//  Copyright © 2019 游宗諭. All rights reserved.
-//
-
 import UIKit.UIColor
 
 struct Theme {
@@ -20,10 +12,11 @@ struct Theme {
     return isNightMode ? .white : .black
   }
   static var mediumColor:UIColor {
-    return isNightMode ? .darkGray : .lightGray
+//    return isNightMode ? .darkGray : .lightGray
+    return backgroundColor
   }
 
-  static let commandName = ["start","reset","⚙️","pause"]
+  static let commandName = ["start","reset","⚙︎","pause","▼","▲","Resume","?"]
 
   private init(){
   }
