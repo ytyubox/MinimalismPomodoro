@@ -78,6 +78,10 @@ class MainView: UIView {
     button.layer.borderWidth = 1
     return button
   }()
+
+
+  //FIXME: <#For what#>
+
   //MARK: -
 
 
@@ -102,6 +106,7 @@ class MainView: UIView {
     picker.dataSource = picker
     picker.delegate = picker
   }
+
 //MARK:-
 
   func setupTheme() {
@@ -202,7 +207,7 @@ extension MainView {
   @objc func command(_ sender:UIButton){
     guard let title = sender.currentTitle else {return}
     UNCenter.requestAuthorization()
-//    UNCenter.sentUN(delay: 5, message: "press" + title)
+    //    UNCenter.sentUN(delay: 5, message: "press" + title)
     delegate?.handler(for: Command.init(for: title))
     switch title {
     case Theme.commandName[0]:
